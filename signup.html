@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+    <link rel="stylesheet" href="signin.css">
+    <script src="signup.js" defer></script>
+    <script src="https://kit.fontawesome.com/bd423e801d.js" crossorigin="anonymous"></script>
+
+    <style>
+        .error-message {
+            color: red;
+            font-size: 12px;
+            display: none;
+            /* Hidden by default */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="info-section">
+            <h2>Join Us Today!</h2>
+            <p>Create an account to enjoy all the features and benefits we offer.</p>
+            <p>Signing up is quick and easy, and your data is secure with us.</p>
+        </div>
+
+        <div class="login-container">
+            <div class="form-container">
+                <h1>Sign Up</h1>
+                <form id="signupForm">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="username" placeholder="Username" required>
+                        <small id="usernameError" class="error-message">Username must be 6-15 characters</small>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <small id="emailError" class="error-message">Email must be a valid Gmail address</small>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <small id="passwordError" class="error-message">Password must be 8-15 characters</small>
+                    </div>
+
+                    <button type="submit" class="btn">Sign Up</button>
+                </form>
+
+                <div class="signup-link">
+                    <p>Already have an account? <a href="login.html">Login here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

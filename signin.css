@@ -1,0 +1,137 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background: linear-gradient(135deg, #fffb00, #ff9500); /* Warm peach gradient */
+    display: flex;
+    height: 100vh; /* Full height */
+}
+
+/* Container for centering */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Sign-Up Form Container */
+.login-container {
+    background-color: #2a2a2a; /* Darker background for contrast */
+    border-radius: 15px;
+    padding: 40px;
+    width: 400px; /* Fixed width for the login container */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+    margin-left: 250px; /* Adjusted margin to move it slightly left */
+}
+
+/* Form Title */
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff; /* Soft pink text */
+    font-size: 28px;
+}
+
+/* Form Styling */
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Field Container */
+.input-field {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+/* Icon Styling */
+.input-field i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #aaa; /* Icon color */
+    font-size: 18px; /* Icon size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Input Field Styling */
+.input-field input {
+    width: 100%;
+    padding: 15px 50px 15px 50px; /* Added padding for icon space */
+    background: #3d3d3d; /* Dark input background */
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: #fff; /* White text */
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Placeholder Text */
+.input-field input::placeholder {
+    color: #aaa; /* Lighter color for placeholder */
+}
+
+/* Input Field Hover and Focus Effects */
+.input-field input:focus {
+    background-color: #484848; /* Slightly lighter background on focus */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Soft glow effect */
+}
+
+/* Change icon color on input focus */
+.input-field input:focus + i {
+    color: #ff9a9e; /* Match icon color with theme */
+}
+
+/* Button Styling */
+.btn {
+    background-color: #ff9a9e; /* Soft pink button */
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff; /* White text */
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background-color: #ff758c; /* Darker pink on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+/* Link Section */
+.signup-link {
+    text-align: center;
+    color: #ffffff; 
+    margin-top: 20px;
+}
+
+/* Sign-up Link Styling */
+.signup-link a {
+    color: #ffffff; /* Change to white text */
+    text-decoration: none; /* Remove underline by default */
+}
+
+/* Hover Effect for Sign-up Link */
+.signup-link a:hover {
+    color: rgb(214, 101, 101); /* Change text color to a softer shade on hover */
+    text-decoration: none; /* Ensure underline is removed on hover */
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #ff6b6b; /* Red for errors */
+    font-size: 12px; /* Smaller font size */
+    display: none; /* Hidden by default */
+    margin-top: 5px; /* Space between input and error message */
+}
